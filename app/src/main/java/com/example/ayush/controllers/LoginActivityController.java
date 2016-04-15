@@ -81,7 +81,7 @@ public class LoginActivityController extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String result){
 
-        Toast toast = Toast.makeText(context,"registration success",Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(context,"registration successful",Toast.LENGTH_SHORT);
         toast.show();
     }
 
