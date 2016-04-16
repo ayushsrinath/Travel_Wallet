@@ -18,6 +18,11 @@
             android:id="@+id/editprofile"
             android:icon="@drawable/ic_menu_manage"
             android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:title="Logout" />
     </group>
 
     <!--   <item android:title="Communicate">
