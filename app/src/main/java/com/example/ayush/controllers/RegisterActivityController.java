@@ -56,7 +56,7 @@ public class RegisterActivityController extends AsyncTask<String,Void,String> {
             conn.setDoOutput(true);
             System.out.println("#########conn - " + conn);
             OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
-            System.out.println("@@@@#########wr - " + wr);
+            System.out.println("@@@@@#########wr - " + wr);
             wr.write(data);
             wr.flush();
 
