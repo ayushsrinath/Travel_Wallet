@@ -34,7 +34,7 @@ public class RegisterActivityController extends AsyncTask<String,Void,String> {
         String password = args[5];
 
         System.out.println("###############Inside Controller...");
-        System.out.println("********* in controller");
+        System.out.println("********* in controller .. push data");
 
         //Post method
         try {
@@ -56,7 +56,7 @@ public class RegisterActivityController extends AsyncTask<String,Void,String> {
             conn.setDoOutput(true);
             System.out.println("#########conn - " + conn);
             OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
-            System.out.println("#########wr - " + wr);
+            System.out.println("@@@@@#########wr - " + wr);
             wr.write(data);
             wr.flush();
 
