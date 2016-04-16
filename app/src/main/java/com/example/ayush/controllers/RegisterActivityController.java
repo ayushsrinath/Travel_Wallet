@@ -14,11 +14,11 @@ import java.net.URLEncoder;
 /**
  * Created by Ayush on 4/15/2016.
  */
-public class LoginActivityController extends AsyncTask<String,Void,String> {
+public class RegisterActivityController extends AsyncTask<String,Void,String> {
 
     private Context context;
 
-    public LoginActivityController(Context context){
+    public RegisterActivityController(Context context){
 
         this.context = context;
     }

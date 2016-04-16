@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.ayush.controllers.LoginActivityController;
+import com.example.ayush.controllers.RegisterActivityController;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         System.out.println("##############Going to COntroller....");
 
         //btRegister.setOnClickListener();
-        //new LoginActivityController();
+        //new RegisterActivityController();
     }
 
     public void goToController(View view){
@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
         String address = etAddress.getText().toString();
         String password = etPassword.getText().toString();
 
-        new LoginActivityController(this).execute(firstname,lastname,phonenumber,emailid,address,password);
+        new RegisterActivityController(this).execute(firstname,lastname,phonenumber,emailid,address,password);
 
         Intent loginIntent = new Intent(RegisterActivity.this,LoginActivity.class);
         RegisterActivity.this.startActivity(loginIntent);
