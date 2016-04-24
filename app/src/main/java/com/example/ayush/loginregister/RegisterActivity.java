@@ -21,7 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         //final EditText etAge = (EditText) findViewById(R.id.etAge);
-         etFirstName = (EditText) findViewById(R.id.etFirstName);
+         etFirstName = (EditText) findViewById(R.id.username);
          etLastName = (EditText) findViewById(R.id.etLastName);
          etPhoneNumber = (EditText) findViewById(R.id.etPhoneNumber);
          etEmailid = (EditText) findViewById(R.id.etEmailid);

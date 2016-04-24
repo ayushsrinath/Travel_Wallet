@@ -29,7 +29,7 @@ public class ExpenseDetailsController extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
 
-        String ExpenseAmount = params[0];
+        String  = params[0];
         String ExpenseDate = params[1];
         String ExpenseCategory = params[2];
         String ExpenseLocation = params[3];

@@ -40,6 +40,9 @@
             android:name=".ExpenseDetailsActivity"
             android:label="ExpenseDetails" />
         <activity
+            android:name=".PaymentScreenActivity"
+            android:label="PaymentScreen" />
+        <activity
             android:name=".ExchangeCurrencyActivity"
             android:label="@string/title_exchange_currency"
             android:theme="@style/AppTheme.NoActionBar" />
