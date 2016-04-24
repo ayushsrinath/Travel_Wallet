@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your Order is being confirmed.It will be delivered in 3 business days."
+
+        android:id="@+id/OrderConfirmedTextView"
+        android:textStyle="bold"
+        android:layout_marginTop="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/OrderIdTextView"
+        android:layout_toEndOf="@+id/OrderIdTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Order Id :"
+        android:id="@+id/OrderIdTextView"
+        android:layout_below="@+id/OrderConfirmedTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="11456879"
+        android:id="@+id/OrderIdView"
+        android:layout_alignTop="@+id/OrderIdTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name :"
+        android:id="@+id/NameTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vivek"
+        android:id="@+id/NameView"
+        android:layout_alignTop="@+id/NameTextView"
+        android:layout_alignLeft="@+id/OrderIdView"
+        android:layout_alignStart="@+id/OrderIdView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount :"
+        android:id="@+id/AmountTextView"
+        android:layout_below="@+id/NameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="125"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/AmountTextView"
+        android:layout_alignLeft="@+id/NameView"
+        android:layout_alignStart="@+id/NameView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Delivery Address :"
+        android:id="@+id/DeliveryaddressTextView"
+        android:layout_below="@+id/AmountTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/HomeButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/AmountTextView"
+        android:layout_alignEnd="@+id/AmountTextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Orders"
+        android:id="@+id/ViewOrderButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/OrderIdView"
+        android:layout_alignEnd="@+id/OrderIdView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="212 South cooper street "
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/DeliveryaddressTextView"
+        android:layout_toRightOf="@+id/DeliveryaddressTextView"
+        android:layout_toEndOf="@+id/DeliveryaddressTextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Currency"
+        android:id="@+id/BuyCurrencyButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/ViewOrderButton"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+</RelativeLayout>
