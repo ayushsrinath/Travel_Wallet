@@ -37,6 +37,9 @@
             android:name=".WalletActivity"
             android:label="Wallet" />
         <activity
+            android:name=".ExpenseDetailsActivity"
+            android:label="ExpenseDetails" />
+        <activity
             android:name=".ExchangeCurrencyActivity"
             android:label="@string/title_exchange_currency"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -44,6 +47,7 @@
             android:name=".Nav_WalletActivity"
             android:label="@string/title_activity_nav__wallet"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".New_LoginActivity"
             android:label="@string/title_activity_new__login"></activity>
