@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ExpenseAmount :"
+        android:textStyle="bold"
+        android:id="@+id/ExpAmt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date of Purchase :"
+        android:textStyle="bold"
+        android:id="@+id/DateOfPurchase"
+        android:layout_below="@+id/ExpAmt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Category Of Purchase :"
+        android:id="@+id/CategoryOfPurchase"
+        android:layout_below="@+id/DateOfPurchase"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="Location : "
+        android:id="@+id/Location"
+        android:layout_below="@+id/CategoryOfPurchase"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Store Name :"
+        android:textStyle="bold"
+        android:id="@+id/StoreName"
+        android:layout_below="@+id/Location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Street :"
+        android:textStyle="bold"
+        android:id="@+id/Street"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/StoreName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Postal Code"
+        android:textStyle="bold"
+        android:id="@+id/PostalCode"
+        android:layout_below="@+id/Street"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ExpenseAmountText"
+        android:layout_above="@+id/DateOfPurchase"
+        android:layout_toRightOf="@+id/DateOfPurchase"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/DateOfPurchaseText"
+        android:layout_above="@+id/CategoryOfPurchase"
+        android:layout_toRightOf="@+id/DateOfPurchase"
+        android:layout_alignRight="@+id/ExpenseAmountText"
+        android:layout_alignEnd="@+id/ExpenseAmountText" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CategoryOfPurchaseSpinner"
+        android:layout_alignBottom="@+id/CategoryOfPurchase"
+        android:layout_alignRight="@+id/DateOfPurchaseText"
+        android:layout_alignEnd="@+id/DateOfPurchaseText"
+        android:layout_toRightOf="@+id/CategoryOfPurchase"
+        android:layout_toEndOf="@+id/CategoryOfPurchase"
+        android:layout_below="@+id/DateOfPurchase"
+        android:spinnerMode="dropdown"></Spinner>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LocationOfPurchaseText"
+        android:layout_alignBottom="@+id/Location"
+        android:layout_toRightOf="@+id/PostalCode"
+        android:layout_alignRight="@+id/CategoryOfPurchaseSpinner"
+        android:layout_alignEnd="@+id/CategoryOfPurchaseSpinner" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/StoreNameText"
+        android:layout_above="@+id/Street"
+        android:layout_alignRight="@+id/LocationOfPurchaseText"
+        android:layout_alignEnd="@+id/LocationOfPurchaseText"
+        android:layout_toRightOf="@+id/StoreName"
+        android:layout_toEndOf="@+id/StoreName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/StreetText"
+        android:layout_alignBottom="@+id/Street"
+        android:layout_toRightOf="@+id/Location"
+        android:layout_alignRight="@+id/StoreNameText"
+        android:layout_alignEnd="@+id/StoreNameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PostalCodeText"
+        android:layout_alignBottom="@+id/PostalCode"
+        android:layout_alignRight="@+id/StreetText"
+        android:layout_alignEnd="@+id/StreetText"
+        android:layout_toRightOf="@+id/ExpAmt"
+        android:layout_toEndOf="@+id/ExpAmt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/EdiExpenseButton"
+        android:layout_below="@+id/PostalCode"
+        android:layout_alignLeft="@+id/StreetText"
+        android:layout_alignStart="@+id/StreetText"
+        android:layout_marginTop="30dp" />
+
+
+</RelativeLayout>
