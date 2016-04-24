@@ -34,7 +34,7 @@ public class RegisterActivityController extends AsyncTask<String,Void,String> {
         String password = args[5];
 
         System.out.println("###############Inside Controller...");
-        System.out.println("********* in controller .. to test changes in get set up");
+        System.out.println("********* in controller .. push data");
 
         //Post method
         try {

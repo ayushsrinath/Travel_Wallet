@@ -82,18 +82,21 @@ public class Nav_WalletActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.wallet) {
-            // Handle the camera action
+
             Intent walletIntent = new Intent(Nav_WalletActivity.this, Nav_WalletActivity.class);
             Nav_WalletActivity.this.startActivity(walletIntent);
         } else if (id == R.id.exchangecurrency) {
             Intent drawerIntent = new Intent(Nav_WalletActivity.this, ExchangeCurrencyActivity.class);
             Nav_WalletActivity.this.startActivity(drawerIntent);
 
-        }/* else if (id == R.id.editprofile) {
+        } else if (id == R.id.editprofile) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.logout) {
 
-        } else if (id == R.id.nav_share) {
+            Intent logoutIntent = new Intent(Nav_WalletActivity.this, LoginActivity.class);
+            Nav_WalletActivity.this.startActivity(logoutIntent);
+
+        }/* else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
